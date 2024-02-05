@@ -9,10 +9,10 @@ import os
 
 app = FastAPI()
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI KEY" 
 embeddings = OpenAIEmbeddings()
 
-pdfreader = PdfReader("/Users/rakesh/PycharmProjects/python_ChatUI/09. Understanding Anxiety in Children and Teens Author Child Mind Institute.pdf")
+pdfreader = PdfReader("PDF-location")
 
 raw_text = ''
 for i, page in enumerate(pdfreader.pages):
